@@ -1,0 +1,32 @@
+{
+  "name": "Let me in!",
+  "version": "1.0",
+  "description": "Helps you to be automatically logged in. Especially good with websites which use JWT.",
+  "manifest_version": 2,
+  "web_accessible_resources": [],
+  "background": {
+    "scripts": ["./background/main.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "icon-locked.png"
+    },
+    "default_title": "Let me in!",
+    "default_popup": "./popup/index.html"
+  },
+  "icons": {
+    "16": "icon-locked.png",
+    "48": "icon-locked.png",
+    "128": "icon-locked.png"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "tabs",
+    "webNavigation",
+    "http://*/",
+    "https://*/"
+  ],
+  "options_page": "./options/index.html"
+}
